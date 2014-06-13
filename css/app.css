@@ -1,0 +1,69 @@
+.player {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	position: relative;
+	min-height: 350px;
+}
+
+.player.turn {
+	background: #f9f9f9;
+	border: 1px solid #eee;
+}
+
+.player.bust {
+	background: red !important;
+	color: #fff !important;
+}
+
+.player.bust .card {
+	display: none;
+}
+
+.player.bust .turn-options {
+	display: none;
+}
+
+.player .card {
+	display: inline-block;
+	float: left;
+	position: relative;
+	width: 20%;
+	background: white;
+	margin-right: 20px;
+	min-height: 200px;
+	line-height: 200px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.player .card span {
+	position: absolute;
+	display: block;
+	left: 20px;
+	top: 20px;
+	text-align: left;
+	height: auto;
+	line-height: 0;
+	font-size: 50px;
+}
+
+.player .card.H, .player .card.D {
+	border: 5px solid red;
+	color: red;
+}
+
+.player .card.S, .player .card.C {
+	border: 5px solid black;
+	color: black;
+}
+
+.player .turn-options {
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+}
